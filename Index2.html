@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+<style>
+	ul { list-style:none outside none; position:relative; margin:0; padding:0;}
+	li { list-style:none outside none; overflow:hidden; margin:0; padding:0;}
+	.parallax-item { position:relative; -webkit-transform: 0px 0px 0px; }
+	#item1 { height: 600px;}
+	#item2 { height: 500px; }
+	#item3 { height: 750px; }
+	#item4 { height: 550px; }
+	#item1 .parallax-background { background-image: url(img10.jpg); height: 800px; width:100%; position:absolute; top: 0px; left:0px; background-repeat:no-repeat; background-position:25% 20%}
+	#item2 .parallax-background {
+		background-image: url(img1.jpg);
+		height: 700px;
+		width:100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background-repeat: no-repeat;
+		background-position:0% 25%;	
+	}
+	#item3 .parallax-background {
+		background-image: url(img4.jpg);
+		background-position: 25% 0%;
+		height: 1000px;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background-repeat: no-repeat;
+		background-position: 10% 40%;
+	}
+	#item4 .parallax-background {
+		background-image: url(img3.jpg);
+		height: 800px;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background-repeat: no-repeat;
+		background-position: -25% 25%
+	}
+
+	#item1 .content { position:relative; margin: 100px auto; font-size: 3em; font-family: Arial, Helvetica, sans-serif; width: 350px; color: #fff;}
+	#item2 .content {
+		position: relative;
+		margin: 40px 10px;
+		width: 400px;
+		font-size: 3em;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #fff;
+	}
+	#item3 .content {
+		position: relative;
+		width: 200px;
+		color:#fff;
+		margin: 40px 0px 40px 70px;
+		font-size: 3em;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	#item4 .content {
+		position: relative;
+		margin: 40px 10px;
+		font-size: 3em;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #fff;
+	}
+
+</style>
+
+	<ul id="parallax">
+		<li class="parallax-item" id="item1">
+			<div class="parallax-background"></div>
+			<div class="content">Item 1</div>
+		</li>
+		<li class="parallax-item" id="item2">
+			<div class="parallax-background"></div>
+			<div class="content">Item 2</div>
+		</li>
+		<li class="parallax-item" id="item3">
+			<div class="parallax-background"></div>
+			<div class="content">Item 3</div>
+		</li>
+		<li class="parallax-item" id="item4">
+			<div class="parallax-background"></div>
+			<div class="content">Item 4</div>
+		</li>
+	</ul>
+
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="ParallaxScroll.js"></script>
+</body>
+</html>
